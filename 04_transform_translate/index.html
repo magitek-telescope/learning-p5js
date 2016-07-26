@@ -3,9 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>Hello, p5.js</title>
+	<style>html,body{margin:0;padding:0;outline:none;}</style>
 </head>
 <body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+<script>
+function setup(){
+	createCanvas(600, 400);
+}
+
+function draw(){
+	background("#e5e5e5");
+	push();
+		translate(200, 200);
+		rect(0, 0, 100, 100);
+	pop();
+}
+</script>
 </body>
 </html>
