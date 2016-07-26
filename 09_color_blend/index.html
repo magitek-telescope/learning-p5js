@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Hello, p5.js</title>
+	<style>html,body{margin:0;padding:0;outline:none;}</style>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+<script>
+function setup(){
+	createCanvas(600, 400);
+}
+
+function draw(){
+	blendMode(BLEND);
+	background("#e5e5e5");
+	fill(64, 64);
+
+	noStroke();
+	blendMode(BLEND);
+	rect(250, 150, 100, 100);
+	rect(275, 175, 100, 100);
+
+	blendMode(ADD);
+	rect(50, 50, 50, 50);
+
+	blendMode(MULTIPLY)
+	rect(50, 300, 50, 50);
+
+	blendMode(DARKEST)
+	rect(500, 50, 50, 50);
+
+	blendMode(DARKEST)
+	rect(500, 300, 50, 50);
+}
+</script>
+</body>
+</html>
