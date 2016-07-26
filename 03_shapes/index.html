@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Hello, p5.js</title>
+	<style>html,body{margin:0;padding:0;outline:none;}</style>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+<script>
+function setup(){
+	createCanvas(600, 400);
+}
+
+function draw(){
+	background("#e5e5e5");
+	rect(50, 50, 100, 100);
+
+	triangle(450, 50, 400, 140, 500, 140);
+
+	ellipse(100, 300, 100, 100);
+
+	arc(450, 300, 100, 100, PI, PI);
+
+
+	strokeWeight(10);
+	point(300, 200);
+	strokeWeight(1);
+
+	line(250, 150, 350, 250);
+}
+
+</script>
+</body>
+</html>
